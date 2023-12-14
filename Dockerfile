@@ -3,7 +3,7 @@ FROM dart:latest AS build
 
 WORKDIR /app
 
-COPY ./dart_application_1/pubsec.* ./app
+COPY ./dart_application_1/pubspec.* ./
 COPY . ./app
 COPY ./dart_application_1/bin/dart_application_1.dart ./app/bin/dart_application_1.dart
 
