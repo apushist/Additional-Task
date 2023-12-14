@@ -3,6 +3,7 @@ FROM dart:latest
 
 COPY ./ ./
 
-RUN cargo build --release
+RUN dart pub get
+RUN dart compile exe dart_application_1.dart
 
-CMD ["./target/release/dart_application_1"]
+ENTRYPOINT ["./dart_application_1.exe"]
