@@ -1,3 +1,4 @@
-void main(List<String> arguments) {
-  print(1 + 1);
+import 'package:dart_application_1/dart_application_1.dart';
+void main() {
+  print(sum(1, 1));
 }
